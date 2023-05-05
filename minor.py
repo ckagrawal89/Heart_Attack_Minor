@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import sklearn
 from sklearn.metrics import f1_score
 import pickle, operator
 import preprocess
