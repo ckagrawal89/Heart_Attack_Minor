@@ -26,7 +26,7 @@ X_test,y_test=preprocess.spliting(df)
 
 col=list()
 
-col=st.columns(len(column)-1)
+col=st.beta_columns(len(column)-1)
 inputss={}
 for i in range(0,len(column)-1):
     with st.container():
