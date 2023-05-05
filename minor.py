@@ -38,7 +38,7 @@ for i in range(0,len(column)-1):
             a=st.selectbox(features_dff[i],dat)
         inputss[column[i]]=a
 
-col1,col2,col3=st.columns([4,3,2])
+col1,col2,col3=st.beta_columns([4,3,2])
 with col2:
     but=st.button("Predict")
 
