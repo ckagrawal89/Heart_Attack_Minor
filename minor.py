@@ -7,7 +7,7 @@ import preprocess
 import models
 
 df=pd.read_csv("heart.csv")
-col1,col2,col3=st.beta_columns([3,6,2])
+col1,col2,col3=st.columns([3,6,2])
 with col2:
     st.header("Heart Attack Prediction")
 
@@ -26,7 +26,7 @@ X_test,y_test=preprocess.spliting(df)
 
 col=list()
 
-col=st.beta_columns(len(column)-1)
+col=st.columns(len(column)-1)
 inputss={}
 for i in range(0,len(column)-1):
     with st.container():
@@ -38,7 +38,7 @@ for i in range(0,len(column)-1):
             a=st.selectbox(features_dff[i],dat)
         inputss[column[i]]=a
 
-col1,col2,col3=st.beta_columns([4,3,2])
+col1,col2,col3=st.columns([4,3,2])
 with col2:
     but=st.button("Predict")
 
