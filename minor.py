@@ -7,7 +7,7 @@ import preprocess
 import models
 
 df=pd.read_csv("heart.csv")
-col1,col2,col3=st.columns([3,6,2])
+col1,col2,col3=st.beta_columns([3,6,2])
 with col2:
     st.header("Heart Attack Prediction")
 
